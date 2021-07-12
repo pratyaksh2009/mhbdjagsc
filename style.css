@@ -1,0 +1,52 @@
+body {
+	font-size: 20px;
+}
+
+/* Wordmark and overlay */
+#wordmark {
+	background: #8c1515;
+	padding: 5px 0;
+	border-bottom: 4px solid #d2bd86;
+}
+#wordmark img {
+	margin: 0 auto;
+	display: block;
+}
+
+.ui-page  .ui-header {
+    background: #8c1515 !important;
+	padding: 5px 0;
+	border-bottom: 4px solid #d2bd86;
+}
+
+#vignanamhome  .ui-header {
+    background: #8c1515 !important;
+	padding: 5px 0;
+	border-bottom: 4px solid #d2bd86;
+}
+
+.ui-page .ui-footer {
+    background: #8c1515 !important;
+}
+
+.ui-page .ui-button {
+    background: #8c1515 !important;
+}
+
+#vignanamcategory  .ui-header {
+    background: #8c1515 !important;
+	padding-top: 20px;
+	border-bottom: 4px solid #d2bd86;
+}
+
+#vignanamcontent  .ui-PAGE {
+    background: #FFFFFF;
+}
+
+.posttitle {
+	color: #8c1515;
+}
+
+#increase { height: 32px; font-size: 24px; }
+
+#decrease { height: 32px; font-size: 12px; }

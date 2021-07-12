@@ -1,0 +1,189 @@
+
+<html> 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Vaidika Vignanam: LANGUAGE</title>
+		 
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+
+	<style type="text/css" id="custom-css">
+		@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Tenali+Ramakrishna&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+
+		@font-face {
+			font-family: 'Pothana2000';
+			src: url("https://vignanam.org/fonts/Pothana/Pothana2000_1_2_1.eot");
+			src: url("https://vignanam.org/fonts/Pothana/Pothana2000_1_2_1.eot?#iefix") format("embedded-opentype"), 
+				 url("https://vignanam.org/fonts/Pothana/Pothana2000_1_2_1.woff") format("woff"),
+				 url("https://vignanam.org/fonts/Pothana/Pothana2000_1_2_1.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;                
+		}
+
+		@font-face {
+			font-family: 'Goda';
+			src: url("https://vignanam.org/fonts/Goda/Goda.eot");
+			src: url("https://vignanam.org/fonts/Goda/Goda.eot?#iefix") format("embedded-opentype"),
+					url("https://vignanam.org/fonts/Goda/Goda.woff") format("woff"),
+					url("https://vignanam.org/fonts/Goda/Goda.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;                
+		}
+
+		@font-face {
+			font-family: 'Siddhanta';
+			src: url("https://vignanam.org/fonts/Siddhanta/Siddhanta.eot");
+			src: url("https://vignanam.org/fonts/Siddhanta/Siddhanta.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/Siddhanta/Siddhanta.woff") format("woff"),
+				 url("https://vignanam.org/fonts/Siddhanta/Siddhanta.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansTamil';
+			src: url("https://vignanam.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansTelugu';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansTelugu-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansTelugu-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansTelugu-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansTelugu-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansKannada';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansKannada-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansKannada-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansKannada-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansKannada-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansMalayalam';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansMalayalam-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansMalayalam-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansMalayalam-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansMalayalam-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansGujarati';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansGujarati-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansGujarati-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansGujarati-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansGujarati-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansBengali';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansBengali-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansBengali-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansBengali-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansBengali-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansOriya';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansOriya-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansOriya-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansOriya-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansOriya-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansSinhala';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansSinhala-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansSinhala-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansSinhala-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansSinhala-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansGurmukhi';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansGurmukhi-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansGurmukhi-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansGurmukhi-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansGurmukhi-Regular.ttf") format("truetype");
+		}
+
+		@font-face {
+			font-family: 'NotoSansGrantha';
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansGrantha-Regular.eot");
+			src: url("https://vignanam.org/fonts/NotoSans/NotoSansGrantha-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansGrantha-Regular.woff") format("woff"),
+				 url("https://vignanam.org/fonts/NotoSans/NotoSansGrantha-Regular.ttf") format("truetype");
+		}
+
+	</style>
+	
+	<script type="text/javascript" src="main.js"></script>
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-921185-5']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</head> 
+ 
+<body> 
+ 
+<div data-role="page" id="vignanamhome" data-theme="b">
+	 <div data-role="header" style="background: #8c1515;">
+		<center>
+			<img src="unnamed.jpg" alt="Vaidika Vignanam" width="300" />
+		</center>
+	</div>
+
+	<div id="banner"><center>  </center></div>
+	<p style="font-size: 20px; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;">
+		Browse By Language
+	</p>
+    <ul data-role="listview" id="languageview" data-filter="true" data-filter-placeholder="Filter Languages">
+		<li><a href="english/index.htm">English</a></li>
+		<li><a href="devanagari/index.htm">Devanagari</a></li>
+		<li><a href="telugu/index.htm">Telugu</a></li>
+		<li><a href="tamil/index.htm">Tamil</a></li>
+		<li><a href="kannada/index.htm">Kannada</a></li>
+		<li><a href="malayalam/index.htm">Malayalam</a></li>
+		<li><a href="gujarati/index.htm">Gujarati</a></li>
+		<li><a href="oriya/index.htm">Oriya</a></li>
+		<li><a href="bengali/index.htm">Bengali</a></li>
+		<li><a href="marathi/index.htm">Marathi</a></li>
+		<li><a href="assamese/index.htm">Assamese</a></li>
+		<li><a href="punjabi/index.htm">Punjabi</a></li>
+		<li><a href="hindi/index.htm">Hindi</a></li>
+		<li><a href="samskritam/index.htm">Samskritam</a></li>
+		<li><a href="konkani/index.htm">Konkani</a></li>
+		<li><a href="nepali/index.htm">Nepali</a></li>
+		<li><a href="sinhala/index.htm">Sinhala</a></li>
+		<li><a href="grantha/index.htm">Bengali</a></li>
+	</ul>
+	
+    <div data-role="footer" style="background: #8c1515;">
+		<center>
+			<img src="unnamed.jpg" alt="Vaidika Vignanam" width="300" />
+		</center>
+        <h4>Access the <a href="http://www.vignanam.org/">Full Site</a>.</h4>
+    </div>
+ 
+</div>
+
+</body>
+</html>
